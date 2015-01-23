@@ -1,0 +1,59 @@
+Field=Comment~String~Comment~100|Field=Description~String~Description~100|Field=Designator~String~Designator~100|Field=Footprint~String~Footprint~100|Field=LibRef~String~LibRef~100|Field=Quantity~Integer~Quantity~100|ReportField=Currency~<none>|ReportField=ProductionQuantity~1|ReportField=ProjectFileName~PCB_Project1.PrjPCB|ReportField=ProjectFullPath~E:\work_pcb\ËÄ²ã°å4-8\PCB_Project1.PrjPCB|ReportField=Title~Bill of Materials For Project [PCB_Project1.PrjPCB] (No PCB Document Selected)|ReportField=TotalQuantity~250|ReportField=ReportTime~10:56:58|ReportField=ReportDate~2014-4-15|ReportField=ReportDateTime~2014-4-15 10:56:58|ReportField=OutputName~Bill of Materials|ReportField=OutputType~BOM_PartType|ReportField=GeneratorName~BOM|ReportField=GeneratorDescription~Bill of Materials|ReportField=VariantName~None|ReportField=Address1~|ReportField=Address2~|ReportField=Address3~|ReportField=Address4~|ReportField=ApprovedBy~|ReportField=Author~|ReportField=CheckedBy~|ReportField=CompanyName~|ReportField=CurrentDate~2014-4-15|ReportField=CurrentTime~10:56:55|ReportField=Date~|ReportField=DocumentFullPathAndName~E:\work_pcb\ËÄ²ã°å4-8\Sheet1.SchDoc|ReportField=DocumentName~Sheet1.SchDoc|ReportField=DocumentNumber~|ReportField=DrawnBy~|ReportField=Engineer~|ReportField=ImagePath~|ReportField=ModifiedDate~2014-4-11|ReportField=Organization~|ReportField=ProjectName~PCB_Project1.PrjPCB|ReportField=Revision~|ReportField=Rule~|ReportField=SheetNumber~|ReportField=SheetTotal~|ReportField=Time~|ReportField=Title~|ReportField=DataSourceFileName~PCB_Project1.PrjPCB|ReportField=DataSourceFullPath~E:\work_pcb\ËÄ²ã°å4-8\PCB_Project1.PrjPCB
+Cap|Capacitor|C1, C4, C5, C6, C8, C9, C10, C11, C13, C14, C15, C16, C17, C18, C19, C20, C21, C22, C24, C25, C26, C28, C29, C30, C31, C32, C33, C35, C36, C38, C40, C41, C42, C43, C45, C46, C48, C51, C52, C53, C54, C55, C60, C63, C65, C69, C70, C80, C92, C93, C97, C100|0805C|Cap|52
+10uF||C2, C7, C12, C23, C34, C37, C39, C44, C47|1206|CAP+|9
+4.7uF||C3, C49, C50|1206|CAP+|3
+6.8uF||C27|1206|CAP+|1
+0.1uf||C56, C58, C61, C66, C68, C71, C73, C75, C77|0603|CAP NP_Dup3|9
+0.01uF||C57, C59, C64, C67, C72, C74, C76, C78|0603|CAP NP_Dup3|8
+Cap|Capacitor|C81, C86, C87, C88, C89, C90, C91, C94, C95, C96, C103, C104, C105, C106, C107, C108, C109, C110, C112, C113, C114, C115, C116, C117, C118, C119, C120, C121, C122, C123, C124, C125, C126, C127, C128, C129, C130|0603|Cap|37
+104|Capacitor|C82, C83, C84, C85|0805C|Cap|4
+LED1|Typical INFRARED GaAs LED|D1, D2, D5|0805D|LED0|3
+LED0|Typical INFRARED GaAs LED|D4|0805D|LED0|1
+PWR2.5|Low Voltage Power Supply Connector|J1|DS-3|PWR2.5|1
+COAX-F|RF Coaxial PCB Connector, MCX; Thru-Hole, Right-Angle Mount Socket, Blunt Post Terminal, 50 Ohm Impedance|J2, J3|MCX5.08-H5|COAX-F|2
+BUTTON||K1|k1|BUTTON|1
+Inductor Iron|Magnetic-Core Inductor|L1, L11, L17, L18, L19, L20, L21, L23, L24|0805L|Inductor Iron|9
+4.7uH||L2|0805L|H|1
+0||L3, L4, L5, L6|0805L|H|4
+33nH||L7, L8, L9, L10, L14, L15|0805L|H|6
+47nH||L12, L13|0805L|H|2
+82nH||L22|0805L|H|1
+Inductor|Inductor|L25|0805L|Inductor|1
+Trans CT|Center-Tapped Transformer (Coupled Inductor Model)|LL1, LL2|SOT23-5|Trans CT|2
+Header 2|Header, 2-Pin|P1, P7|SIP2-T0|Header 2|2
+Header 5X2|Header, 5-Pin, Dual row|P2, P4|IDC5|Header 5X2|2
+Header 3|Header, 3-Pin|P3|SIP3-T0|Header 3|1
+Header 4|Header, 4-Pin|P5, PP1, PP2|SIP4-T0|Header 4|3
+Header 30|Header, 30-Pin|P10|FFC_30P_0.5MM|Header 30|1
+115||R1, R3, R5, R7|0805|RES|4
+634||R2, R4, R6, R8|0805|RES|4
+10K||R9, R10, R17, R36, R37, R38, R39, R40, R41, R43, R44, R55, R57, R58, R59, R61|0805|RES|16
+51||R11|0805|RES|1
+22||R12, R13, R14, R15, R46, R47, R49, R50, R51, R52, R53, R63|0805|RES|12
+4.7K||R16|0805|RES|1
+60.4||R18, R19, R20, R21|0805|RES|4
+12||R22|0805|RES|1
+90.9||R23, R24|0805|RES|2
+51K||R25|0805|RES|1
+0||R26, R27, R28, R29, R30, R33, R34, R35|0805|RES|8
+2.5K||R31|0805|RES|1
+4.3K||R32|0805|RES|1
+120||R42|0805|RES|1
+1K||R45, R48, R64|0805|RES|3
+10||R54|0805|RES|1
+200||R60|0805|RES|1
+1M||R62|0805|RES|1
+RES*4||RN1, RN2, RN3, RN4, RN5, RN6, RN7, RN8|0603*4·´|RES*4|8
+SPX293300T_5.0||T1|TO-263|SPX29300T|1
+SPX29300T_3.3||T2|TO-263|SPX29300T|1
+ASM1117_1_2||T3|SOT-223|117|1
+1117_1_8||T4|SOT-223|117|1
+ADF4360||U1|QFN24|ADF4360|1
+TRF370333||U2|QFN24|TRF370333|1
+SBB_5089||U3|SBB_5089|SBB_5089|1
+EP2C8Q208C8|Cyclone II Family, 1.2V FPGA, 138 I/O Pins, 2 PLLs, 208-Pin PQFP, Speed Grade 8, Commercial Grade|U4|FPGA208|EP2C8Q208C8|1
+DAC5687-X||U5|TQFP100|DAC5687-X|1
+EPCS4SI8N|EPCS4 Series, In-system programmable 3.3V serial configuration device, 8-Pin SOIC, 4-Megabit, Industrial Grade, Pb-Free|U6|SOP8|EPCS4SI8N|1
+STM32F101V8T6|STM32 ARM-based 32-bit MCU with 64 Kbytes Flash, 100-pin LQFP, Industrial Temperature|U7|TQFP100|STM32F101V8T6|1
+TCXO||Y1|¾§Õñ7050|TCXO|1
+8M|Crystal Oscillator|Y2|¾§Õñ-1|XTAL|1

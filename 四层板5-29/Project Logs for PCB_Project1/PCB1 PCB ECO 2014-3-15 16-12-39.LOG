@@ -1,0 +1,25 @@
+Removed Pin From Net: NetName=A11 Pin=U4-105
+Removed Pin From Net: NetName=A10 Pin=U4-106
+Removed Pin From Net: NetName=A9 Pin=U4-108
+Removed Pin From Net: NetName=A8 Pin=U4-110
+Removed Pin From Net: NetName=C9 Pin=U4-112
+Removed Pin From Net: NetName=C8 Pin=U4-113
+Removed Pin From Net: NetName=C7 Pin=U4-114
+Removed Pin From Net: NetName=C6 Pin=U4-115
+Added Pin To Net: NetName=FD0 Pin=U4-105
+Added Net: Name=FD0
+Added Pin To Net: NetName=FD1 Pin=U4-106
+Added Net: Name=FD1
+Added Pin To Net: NetName=FD2 Pin=U4-108
+Added Net: Name=FD2
+Added Pin To Net: NetName=FD3 Pin=U4-110
+Added Net: Name=FD3
+Added Pin To Net: NetName=FD4 Pin=U4-112
+Added Net: Name=FD4
+Added Pin To Net: NetName=FD5 Pin=U4-113
+Added Net: Name=FD5
+Added Pin To Net: NetName=FD6 Pin=U4-114
+Added Net: Name=FD6
+Added Pin To Net: NetName=FD7 Pin=U4-115
+Added Net: Name=FD7
+Added Room: Name=Sheet1

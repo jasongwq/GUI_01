@@ -1,0 +1,12 @@
+Board Information Report
+Filename     : D:\机电\电子\Desktop Of Project\ARM+FPGA\四层板5-7\PCB1.PcbDoc
+Date         : 2014/5/7
+Time         : 14:50:44
+Time Elapsed : 00:00:00
+
+Routing Information
+    Routing completion, 100.00%
+    Connections, 739
+    Connections routed, 739
+    Connections remaining, 0
+count : 4

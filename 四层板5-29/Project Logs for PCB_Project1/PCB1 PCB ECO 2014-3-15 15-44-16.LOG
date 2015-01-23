@@ -1,0 +1,32 @@
+Added Component: Designator=P10(FFC_30P_0.5MM)
+Added Pin To Net: NetName=B3 Pin=P10-1
+Added Pin To Net: NetName=B4 Pin=P10-2
+Added Pin To Net: NetName=B5 Pin=P10-3
+Added Pin To Net: NetName=B6 Pin=P10-4
+Added Pin To Net: NetName=B7 Pin=P10-5
+Added Pin To Net: NetName=B8 Pin=P10-6
+Added Pin To Net: NetName=B9 Pin=P10-7
+Added Pin To Net: NetName=E0 Pin=P10-8
+Added Pin To Net: NetName=D7 Pin=P10-9
+Added Pin To Net: NetName=D11 Pin=P10-10
+Added Pin To Net: NetName=D5 Pin=P10-11
+Added Pin To Net: NetName=D4 Pin=P10-12
+Added Pin To Net: NetName=D14 Pin=P10-13
+Added Pin To Net: NetName=D15 Pin=P10-14
+Added Pin To Net: NetName=D0 Pin=P10-15
+Added Pin To Net: NetName=D1 Pin=P10-16
+Added Pin To Net: NetName=E7 Pin=P10-17
+Added Pin To Net: NetName=E8 Pin=P10-18
+Added Pin To Net: NetName=E9 Pin=P10-19
+Added Pin To Net: NetName=E10 Pin=P10-20
+Added Pin To Net: NetName=E11 Pin=P10-21
+Added Pin To Net: NetName=E12 Pin=P10-22
+Added Pin To Net: NetName=E13 Pin=P10-23
+Added Pin To Net: NetName=E14 Pin=P10-24
+Added Pin To Net: NetName=E15 Pin=P10-25
+Added Pin To Net: NetName=D8 Pin=P10-26
+Added Pin To Net: NetName=D9 Pin=P10-27
+Added Pin To Net: NetName=D10 Pin=P10-28
+Added Pin To Net: NetName=GND Pin=P10-29
+Added Pin To Net: NetName=VCC3_3 Pin=P10-30
+Added Member To Class: ClassName=Sheet1 Member=Component P10 Header 30
