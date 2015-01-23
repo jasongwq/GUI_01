@@ -34,47 +34,47 @@
 /*** LCD ***/
 /****************************************/
 /***TOUCH***/
-#define LCD_TOUCH_SPI_SOFT 0
-#define LCD_TOUCH_SPI_1    1
+#define LCD_TOUCH_SPI_SOFT 1
+#define LCD_TOUCH_SPI_1    0
 #define LCD_TOUCH_SPI_2    0
 
-#define RCC_LCD_TOUCH_PEN   RCC_APB2Periph_GPIOB
-#define LCD_TOUCH_PEN_GPIO GPIOB
-#define LCD_TOUCH_PEN_Pin  GPIO_Pin_14
+#define RCC_LCD_TOUCH_PEN  RCC_APB2Periph_GPIOC
+#define LCD_TOUCH_PEN_GPIO GPIOC
+#define LCD_TOUCH_PEN_Pin  GPIO_Pin_2
 
-#define RCC_LCD_TOUCH_TCS   RCC_APB2Periph_GPIOB
-#define LCD_TOUCH_TCS_GPIO GPIOB
-#define LCD_TOUCH_TCS_Pin   GPIO_Pin_10
+#define RCC_LCD_TOUCH_TCS  RCC_APB2Periph_GPIOC
+#define LCD_TOUCH_TCS_GPIO GPIOC
+#define LCD_TOUCH_TCS_Pin  GPIO_Pin_3
 //与触摸屏芯片连接引脚
-#define PEN     PBin(6)      //PF10 INT
-#define TCS     PBout(7)     //PB2  CS
+#define PEN     PCin(2)      //PF10 INT
+#define TCS     PCout(3)     //PB2  CS
 
 #if LCD_TOUCH_SPI_SOFT
 #define RCC_LCD_TOUCH_MISO RCC_APB2Periph_GPIOB
 #define LCD_TOUCH_MISO_GPIO GPIOB
-#define LCD_TOUCH_MISO_Pin  GPIO_Pin_12
+#define LCD_TOUCH_MISO_Pin  GPIO_Pin_4
 
 #define RCC_LCD_TOUCH_MOSI RCC_APB2Periph_GPIOB
 #define LCD_TOUCH_MOSI_GPIO GPIOB
-#define LCD_TOUCH_MOSI_Pin  GPIO_Pin_13
+#define LCD_TOUCH_MOSI_Pin  GPIO_Pin_5
 
 #define RCC_LCD_TOUCH_SCK RCC_APB2Periph_GPIOB
 #define LCD_TOUCH_SCK_GPIO GPIOB
-#define LCD_TOUCH_SCK_Pin  GPIO_Pin_11
+#define LCD_TOUCH_SCK_Pin  GPIO_Pin_3
 
 //模拟SPI引脚
-#define DOUT    PBin (12)//PAin(6)     //PF8  MISO
-#define TDIN    PBout(13)//PAout(7)    //PF9  MOSI
-#define TCLK    PBout(11)//PAout(5)    //PB1  SCLK
+#define DOUT    PBin (4)//PAin(6)     //PF8  MISO
+#define TDIN    PBout(5)//PAout(7)    //PF9  MOSI
+#define TCLK    PBout(3)//PAout(5)    //PB1  SCLK
 
 #endif
 #define LCD_TP_CONGIG
-#define LCD_TP_xfac 0.066844
-#define LCD_TP_yfac 0.109823
+#define LCD_TP_xfac 0.065768
+#define LCD_TP_yfac 0.089917
 #define LCD_TP_xoff (-18)
-#define LCD_TP_yoff (-22)
+#define LCD_TP_yoff (-10)
 //默认为touchtype=0的数据.
-#define LCD_TP_TOUCHTYPE 1
+#define LCD_TP_TOUCHTYPE 0
 //新增的参数,当触摸屏的左右上下完全颠倒时需要用到.
 //touchtype=0的时候,适合左右为X坐标,上下为Y坐标的TP.
 //touchtype=1的时候,适合左右为Y坐标,上下为X坐标的TP.

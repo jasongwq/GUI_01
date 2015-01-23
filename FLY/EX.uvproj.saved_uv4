@@ -617,9 +617,9 @@
               <FilePath>.\USER\TASK\task_gps.cpp</FilePath>
             </File>
             <File>
-              <FileName>task_gsm.cpp</FileName>
+              <FileName>task_display.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>.\USER\TASK\task_gsm.cpp</FilePath>
+              <FilePath>.\USER\TASK\task_display.cpp</FilePath>
             </File>
           </Files>
         </Group>
@@ -751,11 +751,6 @@
               <FileType>1</FileType>
               <FilePath>..\GLIB\PERIPHERAL\GPS\GPS_DRIVER.c</FilePath>
             </File>
-            <File>
-              <FileName>sim900a.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\GLIB\PERIPHERAL\GSM\SIM900A\sim900a.c</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
@@ -818,6 +813,26 @@
               <FileName>bak.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\USER\APP\bak.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>DISPLAY</GroupName>
+          <Files>
+            <File>
+              <FileName>LCD.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\GLIB\PERIPHERAL\LCD\LCD.c</FilePath>
+            </File>
+            <File>
+              <FileName>ILI93.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\GLIB\PERIPHERAL\LCD\ILI93.c</FilePath>
+            </File>
+            <File>
+              <FileName>touch.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\GLIB\PERIPHERAL\LCD\touch.c</FilePath>
             </File>
           </Files>
         </Group>

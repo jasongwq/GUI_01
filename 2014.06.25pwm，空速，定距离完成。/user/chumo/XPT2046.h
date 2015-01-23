@@ -27,7 +27,7 @@
 
 
 void XPT2046_Init(void);
-u8   XPT2046_Read_Dat(u16 *x,u16 *y) ;
+//u8   XPT2046_Read_Dat(u16 *x,u16 *y) ;
 
 
 #endif

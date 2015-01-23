@@ -420,7 +420,7 @@ I (.\user\USB-FS-Config\hw_config.h)(0x51F0BE3A)
 I (.\user\FatFs\ff.h)(0x4C5E0312)
 I (.\user\FatFs\integer.h)(0x4C5E02FA)
 I (.\user\FatFs\ffconf.h)(0x4C5E0888)
-I (.\user\chumo\XPT2046.h)(0x5283822C)
+I (.\user\chumo\XPT2046.h)(0x54C26E62)
 I (.\user\TFT\lcd_dis24.h)(0x5283822E)
 I (.\user\FSMC\FSMC_TFT.h)(0x51EB27CC)
 I (.\user\SPI\SPI.h)(0x51238266)
@@ -569,7 +569,7 @@ I (.\lib\inc\stm32f10x_tim.h)(0x53AACBFA)
 I (.\lib\inc\stm32f10x_usart.h)(0x49D9694A)
 I (.\lib\inc\misc.h)(0x49D9694A)
 I (user\PWM\PWM.h)(0x512604EA)
-F (.\user\SPI\SPI.c)(0x51237F0C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I.\lib\inc -I.\lib\src -I.\sys -I.\user\delay -I.\user\EXTI -I.\user\main -I.\user\UASRT -I.\user\GPIO -I.\user\SD -I.\user\USB-FS-Config -I.\user\USB-FS-Device_Driver -I.\user\FatFs -I.\user\chumo -I.\user\FSMC -I.\user\TFT -I.\user\RTC -I.\user\MPU6050 -I.\user\CC1101 -I.\user\PWM -I.\user\control -I.\user\ultrasonic -I.\user\TIMER -I.\user\SPI -I.\user\eeprom-I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\CMSIS\Include-I D:\Keil_v5\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\out\spi.o --omf_browse .\out\spi.crf --depend .\out\spi.d)
+F (.\user\SPI\SPI.c)(0x54C26E62)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I.\lib\inc -I.\lib\src -I.\sys -I.\user\delay -I.\user\EXTI -I.\user\main -I.\user\UASRT -I.\user\GPIO -I.\user\SD -I.\user\USB-FS-Config -I.\user\USB-FS-Device_Driver -I.\user\FatFs -I.\user\chumo -I.\user\FSMC -I.\user\TFT -I.\user\RTC -I.\user\MPU6050 -I.\user\CC1101 -I.\user\PWM -I.\user\control -I.\user\ultrasonic -I.\user\TIMER -I.\user\SPI -I.\user\eeprom-I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\CMSIS\Include-I D:\Keil_v5\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\out\spi.o --omf_browse .\out\spi.crf --depend .\out\spi.d)
 I (user\SPI\SPI.h)(0x51238266)
 I (.\sys\stm32f10x.h)(0x49D96948)
 I (.\sys\core_cm3.h)(0x49D96948)
@@ -1039,7 +1039,7 @@ I (.\lib\inc\stm32f10x_tim.h)(0x53AACBFA)
 I (.\lib\inc\stm32f10x_usart.h)(0x49D9694A)
 I (.\lib\inc\misc.h)(0x49D9694A)
 F (.\user\chumo\XPT2046.c)(0x522201A6)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I.\lib\inc -I.\lib\src -I.\sys -I.\user\delay -I.\user\EXTI -I.\user\main -I.\user\UASRT -I.\user\GPIO -I.\user\SD -I.\user\USB-FS-Config -I.\user\USB-FS-Device_Driver -I.\user\FatFs -I.\user\chumo -I.\user\FSMC -I.\user\TFT -I.\user\RTC -I.\user\MPU6050 -I.\user\CC1101 -I.\user\PWM -I.\user\control -I.\user\ultrasonic -I.\user\TIMER -I.\user\SPI -I.\user\eeprom-I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\CMSIS\Include-I D:\Keil_v5\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\out\xpt2046.o --omf_browse .\out\xpt2046.crf --depend .\out\xpt2046.d)
-I (user\chumo\XPT2046.h)(0x5283822C)
+I (user\chumo\XPT2046.h)(0x54C26E62)
 I (.\sys\stm32f10x.h)(0x49D96948)
 I (.\sys\core_cm3.h)(0x49D96948)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54199D7A)
@@ -1131,7 +1131,7 @@ I (user\TFT\BMP.h)(0x520F3282)
 I (.\user\FatFs\ff.h)(0x4C5E0312)
 I (.\user\FatFs\integer.h)(0x4C5E02FA)
 I (.\user\FatFs\ffconf.h)(0x4C5E0888)
-I (.\user\chumo\XPT2046.h)(0x5283822C)
+I (.\user\chumo\XPT2046.h)(0x54C26E62)
 I (.\user\delay\delay.h)(0x4F4B9230)
 I (.\user\SPI\SPI.h)(0x51238266)
 I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x54199D7A)
@@ -1229,7 +1229,7 @@ I (user\TFT\lcd_dis24.h)(0x5283822E)
 I (.\user\FSMC\FSMC_TFT.h)(0x51EB27CC)
 I (.\user\GPIO\GPIO.h)(0x5181E592)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54199D7C)
-I (.\user\chumo\XPT2046.h)(0x5283822C)
+I (.\user\chumo\XPT2046.h)(0x54C26E62)
 I (.\user\delay\delay.h)(0x4F4B9230)
 I (.\user\SPI\SPI.h)(0x51238266)
 I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x54199D7A)
@@ -1262,7 +1262,7 @@ I (.\user\FSMC\FSMC_TFT.h)(0x51EB27CC)
 I (.\user\GPIO\GPIO.h)(0x5181E592)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54199D7C)
 I (.\user\delay\delay.h)(0x4F4B9230)
-I (.\user\chumo\XPT2046.h)(0x5283822C)
+I (.\user\chumo\XPT2046.h)(0x54C26E62)
 I (.\user\SPI\SPI.h)(0x51238266)
 I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x54199D7A)
 F (.\user\TFT\WindowP.c)(0x52209A34)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I.\lib\inc -I.\lib\src -I.\sys -I.\user\delay -I.\user\EXTI -I.\user\main -I.\user\UASRT -I.\user\GPIO -I.\user\SD -I.\user\USB-FS-Config -I.\user\USB-FS-Device_Driver -I.\user\FatFs -I.\user\chumo -I.\user\FSMC -I.\user\TFT -I.\user\RTC -I.\user\MPU6050 -I.\user\CC1101 -I.\user\PWM -I.\user\control -I.\user\ultrasonic -I.\user\TIMER -I.\user\SPI -I.\user\eeprom-I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\CMSIS\Include-I D:\Keil_v5\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\out\windowp.o --omf_browse .\out\windowp.crf --depend .\out\windowp.d)
@@ -1294,7 +1294,7 @@ I (.\user\FSMC\FSMC_TFT.h)(0x51EB27CC)
 I (.\user\GPIO\GPIO.h)(0x5181E592)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54199D7C)
 I (.\user\delay\delay.h)(0x4F4B9230)
-I (.\user\chumo\XPT2046.h)(0x5283822C)
+I (.\user\chumo\XPT2046.h)(0x54C26E62)
 I (.\user\SPI\SPI.h)(0x51238266)
 I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x54199D7A)
 F (.\user\USB-FS-Device_Driver\usb_core.c)(0x4D842D6C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I.\lib\inc -I.\lib\src -I.\sys -I.\user\delay -I.\user\EXTI -I.\user\main -I.\user\UASRT -I.\user\GPIO -I.\user\SD -I.\user\USB-FS-Config -I.\user\USB-FS-Device_Driver -I.\user\FatFs -I.\user\chumo -I.\user\FSMC -I.\user\TFT -I.\user\RTC -I.\user\MPU6050 -I.\user\CC1101 -I.\user\PWM -I.\user\control -I.\user\ultrasonic -I.\user\TIMER -I.\user\SPI -I.\user\eeprom-I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\CMSIS\Include-I D:\Keil_v5\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\out\usb_core.o --omf_browse .\out\usb_core.crf --depend .\out\usb_core.d)

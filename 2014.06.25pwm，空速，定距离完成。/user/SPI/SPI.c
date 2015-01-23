@@ -212,7 +212,6 @@ void Disable_SWJ(void)
 	//GPIO_InitTypeDef GPIO_InitStructure;
 
 	RCC_APB2PeriphClockCmd(	RCC_APB2Periph_AFIO, ENABLE );
-	 
 	GPIO_PinRemapConfig(GPIO_Remap_SWJ_Disable,ENABLE);		 	  // PB3 PB4 		 这样之后才可以用
 	GPIO_PinRemapConfig(GPIO_Remap_SWJ_JTAGDisable,ENABLE);		  // PA13 PA14 PA15  这样之后才可以用
 
