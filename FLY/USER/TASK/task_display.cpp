@@ -2,11 +2,13 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-#include "../../GLIB/PERIPHERAL/GSM/SIM900A/SIM900A.h"
-int task_gsm(void)
+#include "../../GLIB/PERIPHERAL/LCD/LCD.h"
+int task_display(void)
 {
     _SS
-    WaitX(20);
+		WaitX(20);
+	LCD_Init();
+    
     while (1)
     {
         WaitX(10);

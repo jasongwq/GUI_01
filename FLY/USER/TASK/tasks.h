@@ -13,6 +13,10 @@ extern int task_6050(void);
 extern int task_fast(void);//500hz
 extern int task_gps(void);
 extern int task_gsm(void);
+extern int task_display(void);
+				 
+				 
+				 
 #ifdef __cplusplus
         }
 #endif

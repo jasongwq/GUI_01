@@ -14,7 +14,9 @@ GUI_EVENT
 
 creat_window(1);
 Creat_Button(10, 40, 105, 130, 0x1111, "Ce_Shi", 0x4774, "In 1", window[0]);
-
+{
+	
+}
 //刷新窗口
 Refresh_window(1);
 set_current_window();

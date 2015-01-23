@@ -45,7 +45,7 @@ Rothmarketing 90 CCW
 /*** LCD ***/
 /******************************/
 /***ourstm400240 CONGIG ***/
-#include "ourstm400240.h"
+//#include "ourstm400240.h"
 /***ourstm400240 CONGIG ***/
 /******************************/
 /*** LCD ***/
