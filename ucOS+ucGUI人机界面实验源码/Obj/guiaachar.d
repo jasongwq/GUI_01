@@ -1,0 +1,16 @@
+..\obj\guiaachar.o: ..\uCGUI\AntiAlias\GUIAAChar.c
+..\obj\guiaachar.o: ..\uCGUI\Core\GUI_Private.h
+..\obj\guiaachar.o: ..\uCGUI\Core\GUI_Protected.h
+..\obj\guiaachar.o: ..\uCGUI\Core\GUI.h
+..\obj\guiaachar.o: ..\uCGUI\Core\GUI_ConfDefaults.h
+..\obj\guiaachar.o: ..\uCGUI\Config\GUIConf.h
+..\obj\guiaachar.o: ..\uCGUI\Core\GUIType.h
+..\obj\guiaachar.o: ..\uCGUI\Core\LCD.h
+..\obj\guiaachar.o: ..\uCGUI\Core\GUIVersion.h
+..\obj\guiaachar.o: ..\uCGUI\Core\LCD_Protected.h
+..\obj\guiaachar.o: ..\uCGUI\Core\GUIDebug.h
+..\obj\guiaachar.o: ..\uCGUI\Core\GUI_X.h
+..\obj\guiaachar.o: ..\uCGUI\WM\WM_GUI.h
+..\obj\guiaachar.o: ..\uCGUI\Core\LCD_Private.h
+..\obj\guiaachar.o: ..\uCGUI\Core\LCD_ConfDefaults.h
+..\obj\guiaachar.o: ..\uCGUI\Config\LCDConf.h

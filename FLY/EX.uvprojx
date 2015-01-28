@@ -147,7 +147,7 @@
             <RestoreSysVw>1</RestoreSysVw>
           </Target>
           <RunDebugAfterBuild>0</RunDebugAfterBuild>
-          <TargetSelection>1</TargetSelection>
+          <TargetSelection>6</TargetSelection>
           <SimDlls>
             <CpuDll></CpuDll>
             <CpuDllArguments></CpuDllArguments>
@@ -161,7 +161,7 @@
             <PeripheralDll></PeripheralDll>
             <PeripheralDllArguments></PeripheralDllArguments>
             <InitializationFile></InitializationFile>
-            <Driver>BIN\UL2CM3.DLL</Driver>
+            <Driver>Segger\JL2CM3.dll</Driver>
           </TargetDlls>
         </DebugOption>
         <Utilities>
@@ -623,6 +623,16 @@
               <FileType>8</FileType>
               <FilePath>.\USER\TASK\task_display.cpp</FilePath>
             </File>
+            <File>
+              <FileName>UI.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\USER\TASK\UI.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>UI_User.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\USER\TASK\UI_User.cpp</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -717,6 +727,11 @@
               <FileName>kalman.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\USER\APP\Kalman_Fliter\kalman.c</FilePath>
+            </File>
+            <File>
+              <FileName>binary_chop.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\GLIB\ALGORITHM\binary_chop.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -835,6 +850,11 @@
               <FileName>touch.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\GLIB\PERIPHERAL\LCD\touch.c</FilePath>
+            </File>
+            <File>
+              <FileName>font_User.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\USER\TASK\font_User.c</FilePath>
             </File>
           </Files>
         </Group>

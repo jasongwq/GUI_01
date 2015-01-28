@@ -1,0 +1,13 @@
+..\obj\photobrowser.o: ..\APP\PhotoBrowser.c
+..\obj\photobrowser.o: ..\APP\PhotoBrowser.h
+..\obj\photobrowser.o: ..\UCOS-II\CONFIG\includes.h
+..\obj\photobrowser.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\photobrowser.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\photobrowser.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\ctype.h
+..\obj\photobrowser.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\photobrowser.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+..\obj\photobrowser.o: ..\UCOS-II\SOURCE\uCOS_II.H
+..\obj\photobrowser.o: ..\UCOS-II\CONFIG\os_cfg.h
+..\obj\photobrowser.o: ..\UCOS-II\PORTS\os_cpu.h
+..\obj\photobrowser.o: ..\UCOS-II\CONFIG\includes.h
+..\obj\photobrowser.o: D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include\stm32f10x.h

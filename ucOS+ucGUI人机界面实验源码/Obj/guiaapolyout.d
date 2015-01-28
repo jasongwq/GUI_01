@@ -1,0 +1,9 @@
+..\obj\guiaapolyout.o: ..\uCGUI\AntiAlias\GUIAAPolyOut.c
+..\obj\guiaapolyout.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\guiaapolyout.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\guiaapolyout.o: ..\uCGUI\Core\GUI.h
+..\obj\guiaapolyout.o: ..\uCGUI\Core\GUI_ConfDefaults.h
+..\obj\guiaapolyout.o: ..\uCGUI\Config\GUIConf.h
+..\obj\guiaapolyout.o: ..\uCGUI\Core\GUIType.h
+..\obj\guiaapolyout.o: ..\uCGUI\Core\LCD.h
+..\obj\guiaapolyout.o: ..\uCGUI\Core\GUIVersion.h

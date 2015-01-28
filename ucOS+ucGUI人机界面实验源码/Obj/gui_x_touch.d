@@ -1,0 +1,10 @@
+..\obj\gui_x_touch.o: ..\uCGUI\GUI_X\GUI_X_Touch.c
+..\obj\gui_x_touch.o: ..\uCGUI\Core\GUI.h
+..\obj\gui_x_touch.o: ..\uCGUI\Core\GUI_ConfDefaults.h
+..\obj\gui_x_touch.o: ..\uCGUI\Config\GUIConf.h
+..\obj\gui_x_touch.o: ..\uCGUI\Core\GUIType.h
+..\obj\gui_x_touch.o: ..\uCGUI\Core\LCD.h
+..\obj\gui_x_touch.o: ..\uCGUI\Core\GUIVersion.h
+..\obj\gui_x_touch.o: ..\uCGUI\Core\GUI_X.h
+..\obj\gui_x_touch.o: ..\HARDWARE\Touch\Touch_s.h
+..\obj\gui_x_touch.o: D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include\stm32f10x.h

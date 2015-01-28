@@ -1,0 +1,12 @@
+..\obj\os_core.o: ..\UCOS-II\SOURCE\os_core.c
+..\obj\os_core.o: ..\UCOS-II\SOURCE\ucos_ii.h
+..\obj\os_core.o: ..\UCOS-II\CONFIG\os_cfg.h
+..\obj\os_core.o: ..\UCOS-II\PORTS\os_cpu.h
+..\obj\os_core.o: ..\UCOS-II\CONFIG\includes.h
+..\obj\os_core.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\os_core.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\os_core.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\ctype.h
+..\obj\os_core.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\os_core.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+..\obj\os_core.o: ..\UCOS-II\SOURCE\uCOS_II.H
+..\obj\os_core.o: D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include\stm32f10x.h

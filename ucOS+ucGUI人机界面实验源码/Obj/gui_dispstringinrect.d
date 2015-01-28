@@ -1,0 +1,15 @@
+..\obj\gui_dispstringinrect.o: ..\uCGUI\Core\GUI_DispStringInRect.c
+..\obj\gui_dispstringinrect.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\gui_dispstringinrect.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\gui_dispstringinrect.o: ..\uCGUI\Core\GUI_Protected.h
+..\obj\gui_dispstringinrect.o: ..\uCGUI\Core\GUI.h
+..\obj\gui_dispstringinrect.o: ..\uCGUI\Core\GUI_ConfDefaults.h
+..\obj\gui_dispstringinrect.o: ..\uCGUI\Config\GUIConf.h
+..\obj\gui_dispstringinrect.o: ..\uCGUI\Core\GUIType.h
+..\obj\gui_dispstringinrect.o: ..\uCGUI\Core\LCD.h
+..\obj\gui_dispstringinrect.o: ..\uCGUI\Core\GUIVersion.h
+..\obj\gui_dispstringinrect.o: ..\uCGUI\Core\LCD_Protected.h
+..\obj\gui_dispstringinrect.o: ..\uCGUI\Core\GUIDebug.h
+..\obj\gui_dispstringinrect.o: ..\uCGUI\Core\GUI_X.h
+..\obj\gui_dispstringinrect.o: ..\uCGUI\WM\WM_GUI.h
+..\obj\gui_dispstringinrect.o: ..\uCGUI\WM\WM.h

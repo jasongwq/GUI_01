@@ -1,0 +1,17 @@
+..\obj\wm.o: ..\uCGUI\WM\WM.c
+..\obj\wm.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\wm.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\wm.o: ..\uCGUI\WM\WM_Intern_ConfDep.h
+..\obj\wm.o: ..\uCGUI\WM\WM_Intern.h
+..\obj\wm.o: ..\uCGUI\WM\WM.h
+..\obj\wm.o: ..\uCGUI\Core\GUI_ConfDefaults.h
+..\obj\wm.o: ..\uCGUI\Config\GUIConf.h
+..\obj\wm.o: ..\uCGUI\Core\GUIType.h
+..\obj\wm.o: ..\uCGUI\Core\LCD.h
+..\obj\wm.o: ..\uCGUI\WM\WM_GUI.h
+..\obj\wm.o: ..\uCGUI\Core\GUI_Protected.h
+..\obj\wm.o: ..\uCGUI\Core\GUI.h
+..\obj\wm.o: ..\uCGUI\Core\GUIVersion.h
+..\obj\wm.o: ..\uCGUI\Core\LCD_Protected.h
+..\obj\wm.o: ..\uCGUI\Core\GUIDebug.h
+..\obj\wm.o: ..\uCGUI\Core\GUI_X.h

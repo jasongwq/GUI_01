@@ -1,0 +1,13 @@
+..\obj\guidev_getysize.o: ..\uCGUI\MemDev\GUIDEV_GetYSize.c
+..\obj\guidev_getysize.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\guidev_getysize.o: ..\uCGUI\Core\GUI_Protected.h
+..\obj\guidev_getysize.o: ..\uCGUI\Core\GUI.h
+..\obj\guidev_getysize.o: ..\uCGUI\Core\GUI_ConfDefaults.h
+..\obj\guidev_getysize.o: ..\uCGUI\Config\GUIConf.h
+..\obj\guidev_getysize.o: ..\uCGUI\Core\GUIType.h
+..\obj\guidev_getysize.o: ..\uCGUI\Core\LCD.h
+..\obj\guidev_getysize.o: ..\uCGUI\Core\GUIVersion.h
+..\obj\guidev_getysize.o: ..\uCGUI\Core\LCD_Protected.h
+..\obj\guidev_getysize.o: ..\uCGUI\Core\GUIDebug.h
+..\obj\guidev_getysize.o: ..\uCGUI\Core\GUI_X.h
+..\obj\guidev_getysize.o: ..\uCGUI\WM\WM_GUI.h

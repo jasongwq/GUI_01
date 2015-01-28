@@ -1,0 +1,14 @@
+..\obj\gui_alloc_alloczero.o: ..\uCGUI\Core\GUI_ALLOC_AllocZero.c
+..\obj\gui_alloc_alloczero.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\gui_alloc_alloczero.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\gui_alloc_alloczero.o: ..\uCGUI\Core\GUI_Protected.h
+..\obj\gui_alloc_alloczero.o: ..\uCGUI\Core\GUI.h
+..\obj\gui_alloc_alloczero.o: ..\uCGUI\Core\GUI_ConfDefaults.h
+..\obj\gui_alloc_alloczero.o: ..\uCGUI\Config\GUIConf.h
+..\obj\gui_alloc_alloczero.o: ..\uCGUI\Core\GUIType.h
+..\obj\gui_alloc_alloczero.o: ..\uCGUI\Core\LCD.h
+..\obj\gui_alloc_alloczero.o: ..\uCGUI\Core\GUIVersion.h
+..\obj\gui_alloc_alloczero.o: ..\uCGUI\Core\LCD_Protected.h
+..\obj\gui_alloc_alloczero.o: ..\uCGUI\Core\GUIDebug.h
+..\obj\gui_alloc_alloczero.o: ..\uCGUI\Core\GUI_X.h
+..\obj\gui_alloc_alloczero.o: ..\uCGUI\WM\WM_GUI.h

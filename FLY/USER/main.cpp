@@ -19,11 +19,14 @@ void SYS_INIT(void)
     delay_init();
     /***中断初始化***/
     NVIC_Configuration();
+    uart_init (115200);
     //uart_init (115200);
-    //uart_init (115200);
-    uart3_init(115200);
+    //uart3_init(115200);
     Sys_Printf(Printf_USART, (char *)"\r\nPrintf_USART ok");
-    delay_ms(500);
+	  Sys_Printf(Printf_USART, (char *)"1");
+	  Sys_Printf(Printf_USART, (char *)"2");
+	  Sys_Printf(Printf_USART, (char *)"3");
+	
 }
 
 int main(void)

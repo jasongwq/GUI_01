@@ -1,0 +1,14 @@
+..\obj\guicharline.o: ..\uCGUI\Core\GUICharLine.c
+..\obj\guicharline.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\guicharline.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\guicharline.o: ..\uCGUI\Core\GUI_Protected.h
+..\obj\guicharline.o: ..\uCGUI\Core\GUI.h
+..\obj\guicharline.o: ..\uCGUI\Core\GUI_ConfDefaults.h
+..\obj\guicharline.o: ..\uCGUI\Config\GUIConf.h
+..\obj\guicharline.o: ..\uCGUI\Core\GUIType.h
+..\obj\guicharline.o: ..\uCGUI\Core\LCD.h
+..\obj\guicharline.o: ..\uCGUI\Core\GUIVersion.h
+..\obj\guicharline.o: ..\uCGUI\Core\LCD_Protected.h
+..\obj\guicharline.o: ..\uCGUI\Core\GUIDebug.h
+..\obj\guicharline.o: ..\uCGUI\Core\GUI_X.h
+..\obj\guicharline.o: ..\uCGUI\WM\WM_GUI.h
