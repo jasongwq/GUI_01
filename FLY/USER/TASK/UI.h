@@ -63,36 +63,36 @@ public:
     Size textsize;//12/16
     Text()
     {
-     textsize.w = 0;   
+        textsize.w = 0;
         Color = BLACK;
-			  User_Font=&User_Font_simsun_16x16;
+        User_Font = &User_Font_simsun_16x16;
     }
     void Set_Text(char *text) //这是成员函数
     {
-			  textsize.w = 0;
+        textsize.w = 0;
         ptext = text;
-				while (*text != 0)
-				{
-					text++;
-					textsize.w++;
-				}
-				Sys_Printf(Printf_USART, (char *)"textsize.w:%d",textsize.w);
-				textsize.w=textsize.w/2;
-				//textsize.w=4;
-				textsize.w*=User_Font->fontsize;
-				textsize.h=User_Font->fontsize;
+        while (*text != 0)
+        {
+            text++;
+            textsize.w++;
+        }
+        Sys_Printf(Printf_USART, (char *)"textsize.w:%d", textsize.w);
+        textsize.w = textsize.w / 2;
+        //textsize.w=4;
+        textsize.w *= User_Font->fontsize;
+        textsize.h = User_Font->fontsize;
     }
     Size Get_Size() //这是成员函数
     {
         return textsize;
     }
-		void Set_Font(Font* font) //这是成员函数
+    void Set_Font(Font *font) //这是成员函数
     {
         User_Font = font;
     }
     void Refresh(u16 x, u16 y, u16 width, u16 height)
     {
-			  Show_Str(x, y, width, height,(u8 *)ptext,User_Font,1);
+        Show_Str(x, y, width, height, (u8 *)ptext, User_Font, 1);
     }
 };
 
@@ -107,49 +107,48 @@ class Button
 private:
     u8 Key;
     pFun_Event pEvent;
-		Event event;
+    Event event;
 public:
     Rect rect;
     Text text;
-Button()
-{
-	event=null;
-}
+    Button()
+    {
+        event = null;
+    }
 
     void Refresh()
     {
         rect.draw();
-			if(text.Get_Size().w<rect.size.w)
-        text.Refresh((rect.size.w-text.Get_Size().w)/2+rect.Bounds.x,(rect.size.h-text.Get_Size().h)/2+rect.Bounds.y, 
-							strlen((char *)text.ptext)*text.textsize.w,text.textsize.h);    
-			else
-				text.Refresh((rect.size.w-text.Get_Size().w)/2+rect.Bounds.x,(rect.size.h-text.Get_Size().h)/2+rect.Bounds.y, 
-							strlen((char *)text.ptext)*text.textsize.w,text.textsize.h);    
-		}
+        if (text.Get_Size().w < rect.size.w)
+            text.Refresh((rect.size.w - text.Get_Size().w) / 2 + rect.Bounds.x, (rect.size.h - text.Get_Size().h) / 2 + rect.Bounds.y,
+                         strlen((char *)text.ptext)*text.textsize.w, text.textsize.h);
+        else
+            text.Refresh((rect.size.w - text.Get_Size().w) / 2 + rect.Bounds.x, (rect.size.h - text.Get_Size().h) / 2 + rect.Bounds.y,
+                         strlen((char *)text.ptext)*text.textsize.w, text.textsize.h);
+    }
     void Set_Event(pFun_Event pf)
     {
         pEvent = pf;
     }
     void event_detection(void)
     {
-			if (tp_dev.sta & TP_PRES_DOWN)
-    {
-        if (tp_button(rect.Bounds.x, rect.Bounds.y, rect.Bounds.x + rect.size.w, rect.Bounds.y + rect.size.h))
-            event = press;
+        if (tp_dev.sta & TP_PRES_DOWN)
+        {
+            if (tp_button(rect.Bounds.x, rect.Bounds.y, rect.Bounds.x + rect.size.w, rect.Bounds.y + rect.size.h))
+                event = press;
+            else
+            {
+                event = null;
+            }
+
+        }
+        else if (event == press)
+            event = release;
         else
-				{
-						event = null;
-				}
-        
-			}
-		else
-			if(event == press)
-						event =release;
-					else
-						event = null;
-		(*pEvent)(event);
+            event = null;
+        (*pEvent)(event);
     }
-		
+
 };
 
 //窗口属性
@@ -184,13 +183,13 @@ public:
     MINI_GUI()
     {
         Window_count = 0;
-        current_window=0;
+        current_window = 0;
     }
     void add_window(Window *win)
     {
         pwindow_list[Window_count++] = win;
     }
-		void event_detection(void)
+    void event_detection(void)
     {
         pwindow_list[current_window]->event_detection();
     }
