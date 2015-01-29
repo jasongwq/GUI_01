@@ -3,6 +3,7 @@
 #include "../../GLIB/PERIPHERAL/LCD/LCD.h"
 #include "../../GLIB/PERIPHERAL/LCD/touch.h"
 #include "font_User.h"
+#include "usr_usart.h"
 #ifndef __UI_H
 #define __UI_H
 
@@ -56,26 +57,42 @@ class Text //以class开头
 {
 private:
     u8 Color;
+    Font *User_Font;
 public:
     char *ptext;
-    u8 textsize;//12/16
+    Size textsize;//12/16
     Text()
     {
-        textsize = 16;
+     textsize.w = 0;   
         Color = BLACK;
+			  User_Font=&User_Font_simsun_16x16;
     }
     void Set_Text(char *text) //这是成员函数
     {
+			  textsize.w = 0;
         ptext = text;
+				while (*text != 0)
+				{
+					text++;
+					textsize.w++;
+				}
+				Sys_Printf(Printf_USART, (char *)"textsize.w:%d",textsize.w);
+				textsize.w=textsize.w/2;
+				//textsize.w=4;
+				textsize.w*=User_Font->fontsize;
+				textsize.h=User_Font->fontsize;
     }
-    void Set_Size(u8 s) //这是成员函数
+    Size Get_Size() //这是成员函数
     {
-        textsize = s;
+        return textsize;
+    }
+		void Set_Font(Font* font) //这是成员函数
+    {
+        User_Font = font;
     }
     void Refresh(u16 x, u16 y, u16 width, u16 height)
     {
-       // LCD_ShowxString(x, y, width, height, textsize, (char *)ptext, 1);
-			  Show_Str(x, y, width, height,(u8 *)ptext,&User_Font_simsun_16x16,1);
+			  Show_Str(x, y, width, height,(u8 *)ptext,User_Font,1);
     }
 };
 
@@ -90,27 +107,49 @@ class Button
 private:
     u8 Key;
     pFun_Event pEvent;
+		Event event;
 public:
     Rect rect;
     Text text;
+Button()
+{
+	event=null;
+}
+
     void Refresh()
     {
         rect.draw();
-        text.Refresh(rect.Bounds.x, rect.Bounds.y, strlen((char *)text.ptext)*text.textsize, text.textsize);
-    }
+			if(text.Get_Size().w<rect.size.w)
+        text.Refresh((rect.size.w-text.Get_Size().w)/2+rect.Bounds.x,(rect.size.h-text.Get_Size().h)/2+rect.Bounds.y, 
+							strlen((char *)text.ptext)*text.textsize.w,text.textsize.h);    
+			else
+				text.Refresh((rect.size.w-text.Get_Size().w)/2+rect.Bounds.x,(rect.size.h-text.Get_Size().h)/2+rect.Bounds.y, 
+							strlen((char *)text.ptext)*text.textsize.w,text.textsize.h);    
+		}
     void Set_Event(pFun_Event pf)
     {
         pEvent = pf;
     }
     void event_detection(void)
     {
-        Event event;
+			if (tp_dev.sta & TP_PRES_DOWN)
+    {
         if (tp_button(rect.Bounds.x, rect.Bounds.y, rect.Bounds.x + rect.size.w, rect.Bounds.y + rect.size.h))
             event = press;
         else
-            event = null;
-        (*pEvent)(event);
+				{
+						event = null;
+				}
+        
+			}
+		else
+			if(event == press)
+						event =release;
+					else
+						event = null;
+		(*pEvent)(event);
     }
+		
 };
 
 //窗口属性
