@@ -26,7 +26,6 @@ void SYS_INIT(void)
 	  Sys_Printf(Printf_USART, (char *)"1");
 	  Sys_Printf(Printf_USART, (char *)"2");
 	  Sys_Printf(Printf_USART, (char *)"3");
-	
 }
 
 int main(void)

@@ -29,10 +29,10 @@ int task_display(void)
 	  LCD_Init();
     TP_Init();
 	  UI_Init();
-		Show_Str(0,0,200,16,(u8 *)"À­ÃÀÈö³ÔµÄºÈ",&User_Font_simsun_16x16,1,0x0000);
+		Show_Str(0,0,200,16,(u8 *)"test",&User_Font_simsun_16x16,1,0x0000);
     while (1)
     {
-        WaitX(100);
+        WaitX(80);
         ui.EventDetection();
         TP_Draw_Big_Point(tp_dev.x, tp_dev.y, RED);
     }

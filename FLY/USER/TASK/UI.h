@@ -93,7 +93,7 @@ public:
     {
         color = col;
     }
-    u16 SetColor() //这是成员函数
+    u16 GetColor() //这是成员函数
     {
         return color;
     }
@@ -159,12 +159,16 @@ private:
     u8 OnOff;
     const char *str1;
     const char *str2;
+    u16 color1;
+    u16 color2;
 public:
-    SwitchButton(const char *s1, const char *s2)
+    SwitchButton(const char *s1, const char *s2,u16 c1 ,u16 c2)
     {
         OnOff = 0;
         str1 = s1;
         str2 = s2;
+			  color1=c1;
+		    color2=c2;
     }
     void SetOn(void)
     {
@@ -181,9 +185,16 @@ public:
     void Refresh(void)
     {
         if (OnOff)
+				{
 					text.SetText(str1);
+				  SwitchButton::SetBackColor(color1);		
+				}
 				else
+				{
 					text.SetText(str2);
+					SwitchButton::SetBackColor(color2);		
+				}
+				
 			Button::Refresh();
     }
 };
@@ -195,7 +206,7 @@ class Window: public Rect
 private:
     u8 Winreturn;
     Button *pButton[10];
-    SwitchButton *pSwitchButton[10];
+    SwitchButton *pSwitchButton[20];
     u8 Obj_count[2];
     u8 name;
 public:

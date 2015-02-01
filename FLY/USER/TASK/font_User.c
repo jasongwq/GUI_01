@@ -32,7 +32,7 @@ void Show_Font(u16 x, u16 y, u8* font,Font *User_Font, u8 mode,u16 color)
     u8 temp, t, t1;
 	  u16 x0 = x;
     u8 *dzk;
-    u16 tempcolor;
+    //u16 tempcolor;
 	  dzk =Get_UserMat(font,User_Font);
     if (mode == 0) //Õý³£ÏÔÊ¾
     {
