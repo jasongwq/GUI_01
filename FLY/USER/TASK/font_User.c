@@ -27,14 +27,12 @@ u8* Get_UserMat(unsigned char *code,Font *User_Font)
 //font:汉字GBK码
 //size:字体大小
 //mode:0,正常显示,1,叠加显示
-void Show_Font(u16 x, u16 y, u8* font,Font *User_Font, u8 mode)
+void Show_Font(u16 x, u16 y, u8* font,Font *User_Font, u8 mode,u16 color)
 {
     u8 temp, t, t1;
 	  u16 x0 = x;
     u8 *dzk;
     u16 tempcolor;
-    //if (size != 12 && size != 16)return; //不支持的size
-    //dzk =Get_HzMat(font, dzk, size); //得到相应大小的点阵数据
 	  dzk =Get_UserMat(font,User_Font);
     if (mode == 0) //正常显示
     {
@@ -43,13 +41,10 @@ void Show_Font(u16 x, u16 y, u8* font,Font *User_Font, u8 mode)
             temp = dzk[t]; //得到12数据
             for (t1 = 0; t1 < 8; t1++)
             {
-                if (temp & 0x80)LCD_DrawPoint(x, y);
+                if (temp & 0x80)LCD_Fast_DrawPoint(x, y,color);
                 else
                 {
-                    tempcolor = POINT_COLOR;
-                    POINT_COLOR = BACK_COLOR;
-                    LCD_DrawPoint(x, y);
-                    POINT_COLOR = tempcolor; //还原
+									LCD_Fast_DrawPoint(x, y,BACK_COLOR);
                 }
                 temp <<= 1;
 							  x++;
@@ -69,7 +64,7 @@ void Show_Font(u16 x, u16 y, u8* font,Font *User_Font, u8 mode)
             temp = dzk[t]; //得到12数据
             for (t1 = 0; t1 < 8; t1++)
             {
-                if (temp & 0x80)LCD_DrawPoint(x, y);
+                if (temp & 0x80)LCD_Fast_DrawPoint(x, y,color);
                 temp <<= 1;
                 x++;
                 if ((x - x0) == User_Font->fontsize)
@@ -82,7 +77,7 @@ void Show_Font(u16 x, u16 y, u8* font,Font *User_Font, u8 mode)
         }
     }
 }
-void Show_Str(u16 x, u16 y, u16 width, u16 height, u8 * str,Font *User_Font, u8 mode)
+void Show_Str(u16 x, u16 y, u16 width, u16 height, u8 * str,Font *User_Font, u8 mode,u16 color)
 {
     u16 x0 = x;
     u16 y0 = y;
@@ -120,7 +115,7 @@ void Show_Str(u16 x, u16 y, u16 width, u16 height, u8 * str,Font *User_Font, u8 
                 x = x0;
             }
             if (y > (y0 + height - User_Font->fontsize))break; //越界返回
-            Show_Font(x, y, (u8*)str, User_Font, mode); //显示这个汉字,空心显示
+            Show_Font(x, y, (u8*)str, User_Font, mode,color); //显示这个汉字,空心显示
             str += 2;
             x += User_Font->fontsize; //下一个汉字偏移
         }

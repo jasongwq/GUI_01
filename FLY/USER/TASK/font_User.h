@@ -12,8 +12,8 @@ typedef struct{
 }Font;
 extern Font User_Font_1;
 extern Font User_Font_simsun_16x16;
-extern void Show_Str(u16 x, u16 y, u16 width, u16 height, u8 * str,Font *User_Font, u8 mode);
-extern void Show_Font(u16 x, u16 y, u8* font,Font *User_Font, u8 mode);
+extern void Show_Str(u16 x, u16 y, u16 width, u16 height, u8 * str,Font *User_Font, u8 mode,u16 color);
+//extern void Show_Font(u16 x, u16 y, u8* font,Font *User_Font, u8 mode);
 #ifdef __cplusplus
 }
 #endif
