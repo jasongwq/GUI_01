@@ -1,6 +1,5 @@
 #include "UI.h"
 
-MiniGui ui;
 void Window::EventDetection(void)
 {
     tp_dev.scan(0);

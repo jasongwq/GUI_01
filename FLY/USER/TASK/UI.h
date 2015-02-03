@@ -109,7 +109,7 @@ typedef int (*pFunEvent)(Event x); //声明一个函数指针
                                 && \
                                 ((tp_dev.y > y1) && (tp_dev.y < y2))\
                                )
-class Button:public Rect
+class Button: public Rect
 {
 private:
     u8 Key;
@@ -153,7 +153,7 @@ public:
         (*pEvent)(event);
     }
 };
-class SwitchButton:public Button
+class SwitchButton: public Button
 {
 private:
     u8 OnOff;
@@ -162,13 +162,13 @@ private:
     u16 color1;
     u16 color2;
 public:
-    SwitchButton(const char *s1, const char *s2,u16 c1 ,u16 c2)
+    SwitchButton(const char *s1, const char *s2, u16 c1 , u16 c2)
     {
         OnOff = 0;
         str1 = s1;
         str2 = s2;
-			  color1=c1;
-		    color2=c2;
+        color1 = c1;
+        color2 = c2;
     }
     void SetOn(void)
     {
@@ -185,17 +185,17 @@ public:
     void Refresh(void)
     {
         if (OnOff)
-				{
-					text.SetText(str1);
-				  SwitchButton::SetBackColor(color1);		
-				}
-				else
-				{
-					text.SetText(str2);
-					SwitchButton::SetBackColor(color2);		
-				}
-				
-			Button::Refresh();
+        {
+            text.SetText(str1);
+            SwitchButton::SetBackColor(color1);
+        }
+        else
+        {
+            text.SetText(str2);
+            SwitchButton::SetBackColor(color2);
+        }
+
+        Button::Refresh();
     }
 };
 
@@ -205,15 +205,17 @@ class Window: public Rect
 {
 private:
     u8 Winreturn;
-    Button *pButton[10];
-    SwitchButton *pSwitchButton[20];
+    Button **pButton;
+    SwitchButton **pSwitchButton;
     u8 Obj_count[2];
     u8 name;
 public:
-    Window(u8 n)
+    Window(u8 n,Button *pB[],SwitchButton *pS[])
     {
         Obj_count[0] = 0;
         Obj_count[1] = 0;
+        pButton=pB;
+        pSwitchButton=pS;
         name = n;
     }
     void AddButton(Button *pB)
