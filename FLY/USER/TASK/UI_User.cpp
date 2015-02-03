@@ -1,5 +1,6 @@
 #include "UI.h"
-MiniGui ui;
+Window *pwindow_list[7];
+MiniGui ui(pwindow_list);
 Button *pButton0[7];
 SwitchButton *pSwitchButton0[1];
 Window window0(0,pButton0,pSwitchButton0);

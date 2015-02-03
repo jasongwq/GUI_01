@@ -232,14 +232,15 @@ public:
 class MiniGui
 {
 private:
-    Window *pwindow_list[10];
+    Window **pwindow_list;
     u8 window_count;
 public:
     u8 current_window;
-    MiniGui()
+    MiniGui(Window *pw[])
     {
         window_count = 0;
         current_window = 0;
+			pwindow_list=pw;
     }
     void AddWindow(Window *win)
     {
