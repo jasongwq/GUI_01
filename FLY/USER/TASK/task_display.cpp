@@ -25,7 +25,7 @@ int task_display(void)
 {
     _SS
     WaitX(20);
-    RCC_APB2PeriphClockCmd( RCC_APB2Periph_AFIO, ENABLE ); GPIO_PinRemapConfig(GPIO_Remap_SWJ_Disable, ENABLE);
+    RCC_APB2PeriphClockCmd( RCC_APB2Periph_AFIO, ENABLE ); GPIO_PinRemapConfig(GPIO_Remap_SWJ_JTAGDisable, ENABLE);
 	  LCD_Init();
     TP_Init();
 	  UI_Init();
