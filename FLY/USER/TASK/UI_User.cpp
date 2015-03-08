@@ -1,5 +1,5 @@
 #include "UI.h"
-Window *pwindow_list[7];
+Window *pwindow_list[8];
 MiniGui ui(pwindow_list);
 Button *pButton0[7];
 SwitchButton *pSwitchButton0[1];
@@ -81,40 +81,48 @@ int Button0_4_Event(Event event){if (event == release){window5.Refresh();}return
 int Button0_5_Event(Event event){if (event == release){window6.Refresh();}return 0;}
 int Button0_6_Event(Event event){if (event == release){window0.Refresh();}return 0;}
 int Button1_0_Event(Event event){if (event == release){window0.Refresh();}return 0;}
-int SwitchButton1_1_Event(Event event){if (event == release){if(SwitchButton1_1.GetOnoff())SwitchButton1_1.SetOff();else SwitchButton1_1.SetOn();SwitchButton1_1.Refresh();}return 0;}
-int SwitchButton1_2_Event(Event event){if (event == release){if(SwitchButton1_2.GetOnoff())SwitchButton1_2.SetOff();else SwitchButton1_2.SetOn();SwitchButton1_2.Refresh();}return 0;}
+int curswitchbotton1=0;
+int SwitchButton1_1_Event(Event event){if (event == release){u8 cur=0;if(pSwitchButton1[cur]->GetOnoff()!=1){pSwitchButton1[curswitchbotton1]->SetOff();pSwitchButton1[curswitchbotton1]->Refresh();curswitchbotton1=cur;pSwitchButton1[cur]->SetOn();pSwitchButton1[cur]->Refresh();}} return 0;}
+int SwitchButton1_2_Event(Event event){if (event == release){u8 cur=1;if(pSwitchButton1[cur]->GetOnoff()!=1){pSwitchButton1[curswitchbotton1]->SetOff();pSwitchButton1[curswitchbotton1]->Refresh();curswitchbotton1=cur;pSwitchButton1[cur]->SetOn();pSwitchButton1[cur]->Refresh();}} return 0;}
+// int SwitchButton1_1_Event(Event event){if (event == release){if(SwitchButton1_1.GetOnoff())SwitchButton1_1.SetOff();else SwitchButton1_1.SetOn();SwitchButton1_1.Refresh();}return 0;}
+// int SwitchButton1_2_Event(Event event){if (event == release){if(SwitchButton1_2.GetOnoff())SwitchButton1_2.SetOff();else SwitchButton1_2.SetOn();SwitchButton1_2.Refresh();}return 0;}
 int Button2_0_Event(Event event){if (event == release){window0.Refresh();}return 0;}
 int SwitchButton2_1_Event(Event event){if (event == release){if(SwitchButton2_1.GetOnoff())SwitchButton2_1.SetOff();else SwitchButton2_1.SetOn();SwitchButton2_1.Refresh();}return 0;}
 int Button3_0_Event(Event event){if (event == release){window0.Refresh();}return 0;}
-int SwitchButton3_1_Event(Event event){if (event == release){if(SwitchButton3_1.GetOnoff())SwitchButton3_1.SetOff();else SwitchButton3_1.SetOn();SwitchButton3_1.Refresh();}return 0;}
-int SwitchButton3_2_Event(Event event){if (event == release){if(SwitchButton3_2.GetOnoff())SwitchButton3_2.SetOff();else SwitchButton3_2.SetOn();SwitchButton3_2.Refresh();}return 0;}
-int SwitchButton3_3_Event(Event event){if (event == release){if(SwitchButton3_3.GetOnoff())SwitchButton3_3.SetOff();else SwitchButton3_3.SetOn();SwitchButton3_3.Refresh();}return 0;}
-int SwitchButton3_4_Event(Event event){if (event == release){if(SwitchButton3_4.GetOnoff())SwitchButton3_4.SetOff();else SwitchButton3_4.SetOn();SwitchButton3_4.Refresh();}return 0;}
-int SwitchButton3_5_Event(Event event){if (event == release){if(SwitchButton3_5.GetOnoff())SwitchButton3_5.SetOff();else SwitchButton3_5.SetOn();SwitchButton3_5.Refresh();}return 0;}
-int SwitchButton3_6_Event(Event event){if (event == release){if(SwitchButton3_6.GetOnoff())SwitchButton3_6.SetOff();else SwitchButton3_6.SetOn();SwitchButton3_6.Refresh();}return 0;}
-int SwitchButton3_7_Event(Event event){if (event == release){if(SwitchButton3_7.GetOnoff())SwitchButton3_7.SetOff();else SwitchButton3_7.SetOn();SwitchButton3_7.Refresh();}return 0;}
-int SwitchButton3_8_Event(Event event){if (event == release){if(SwitchButton3_8.GetOnoff())SwitchButton3_8.SetOff();else SwitchButton3_8.SetOn();SwitchButton3_8.Refresh();}return 0;}
-int SwitchButton3_9_Event(Event event){if (event == release){if(SwitchButton3_9.GetOnoff())SwitchButton3_9.SetOff();else SwitchButton3_9.SetOn();SwitchButton3_9.Refresh();}return 0;}
-int SwitchButton3_10_Event(Event event){if (event == release){if(SwitchButton3_10.GetOnoff())SwitchButton3_10.SetOff();else SwitchButton3_10.SetOn();SwitchButton3_10.Refresh();}return 0;}
-int SwitchButton3_11_Event(Event event){if (event == release){if(SwitchButton3_11.GetOnoff())SwitchButton3_11.SetOff();else SwitchButton3_11.SetOn();SwitchButton3_11.Refresh();}return 0;}
-int SwitchButton3_12_Event(Event event){if (event == release){if(SwitchButton3_12.GetOnoff())SwitchButton3_12.SetOff();else SwitchButton3_12.SetOn();SwitchButton3_12.Refresh();}return 0;}
-int SwitchButton3_13_Event(Event event){if (event == release){if(SwitchButton3_13.GetOnoff())SwitchButton3_13.SetOff();else SwitchButton3_13.SetOn();SwitchButton3_13.Refresh();}return 0;}
-int SwitchButton3_14_Event(Event event){if (event == release){if(SwitchButton3_14.GetOnoff())SwitchButton3_14.SetOff();else SwitchButton3_14.SetOn();SwitchButton3_14.Refresh();}return 0;}
-int SwitchButton3_15_Event(Event event){if (event == release){if(SwitchButton3_15.GetOnoff())SwitchButton3_15.SetOff();else SwitchButton3_15.SetOn();SwitchButton3_15.Refresh();}return 0;}
-int SwitchButton3_16_Event(Event event){if (event == release){if(SwitchButton3_16.GetOnoff())SwitchButton3_16.SetOff();else SwitchButton3_16.SetOn();SwitchButton3_16.Refresh();}return 0;}
-int SwitchButton3_17_Event(Event event){if (event == release){if(SwitchButton3_17.GetOnoff())SwitchButton3_17.SetOff();else SwitchButton3_17.SetOn();SwitchButton3_17.Refresh();}return 0;}
-int SwitchButton3_18_Event(Event event){if (event == release){if(SwitchButton3_18.GetOnoff())SwitchButton3_18.SetOff();else SwitchButton3_18.SetOn();SwitchButton3_18.Refresh();}return 0;}
-int SwitchButton3_19_Event(Event event){if (event == release){if(SwitchButton3_19.GetOnoff())SwitchButton3_19.SetOff();else SwitchButton3_19.SetOn();SwitchButton3_19.Refresh();}return 0;}
-int SwitchButton3_20_Event(Event event){if (event == release){if(SwitchButton3_20.GetOnoff())SwitchButton3_20.SetOff();else SwitchButton3_20.SetOn();SwitchButton3_20.Refresh();}return 0;}
+int curswitchbotton3=0;
+int SwitchButton3_1_Event(Event event){if (event == release){u8 cur=0;if(pSwitchButton3[cur]->GetOnoff()!=1){pSwitchButton3[curswitchbotton3]->SetOff();pSwitchButton3[curswitchbotton3]->Refresh();curswitchbotton3=cur;pSwitchButton3[cur]->SetOn();pSwitchButton3[cur]->Refresh();}} return 0;}
+int SwitchButton3_2_Event(Event event){if (event == release){u8 cur=1;if(pSwitchButton3[cur]->GetOnoff()!=1){pSwitchButton3[curswitchbotton3]->SetOff();pSwitchButton3[curswitchbotton3]->Refresh();curswitchbotton3=cur;pSwitchButton3[cur]->SetOn();pSwitchButton3[cur]->Refresh();}} return 0;}
+int SwitchButton3_3_Event(Event event){if (event == release){u8 cur=2;if(pSwitchButton3[cur]->GetOnoff()!=1){pSwitchButton3[curswitchbotton3]->SetOff();pSwitchButton3[curswitchbotton3]->Refresh();curswitchbotton3=cur;pSwitchButton3[cur]->SetOn();pSwitchButton3[cur]->Refresh();}} return 0;}
+int SwitchButton3_4_Event(Event event){if (event == release){u8 cur=3;if(pSwitchButton3[cur]->GetOnoff()!=1){pSwitchButton3[curswitchbotton3]->SetOff();pSwitchButton3[curswitchbotton3]->Refresh();curswitchbotton3=cur;pSwitchButton3[cur]->SetOn();pSwitchButton3[cur]->Refresh();}} return 0;}
+int SwitchButton3_5_Event(Event event){if (event == release){u8 cur=4;if(pSwitchButton3[cur]->GetOnoff()!=1){pSwitchButton3[curswitchbotton3]->SetOff();pSwitchButton3[curswitchbotton3]->Refresh();curswitchbotton3=cur;pSwitchButton3[cur]->SetOn();pSwitchButton3[cur]->Refresh();}} return 0;}
+int SwitchButton3_6_Event(Event event){if (event == release){u8 cur=5;if(pSwitchButton3[cur]->GetOnoff()!=1){pSwitchButton3[curswitchbotton3]->SetOff();pSwitchButton3[curswitchbotton3]->Refresh();curswitchbotton3=cur;pSwitchButton3[cur]->SetOn();pSwitchButton3[cur]->Refresh();}} return 0;}
+int SwitchButton3_7_Event(Event event){if (event == release){u8 cur=6;if(pSwitchButton3[cur]->GetOnoff()!=1){pSwitchButton3[curswitchbotton3]->SetOff();pSwitchButton3[curswitchbotton3]->Refresh();curswitchbotton3=cur;pSwitchButton3[cur]->SetOn();pSwitchButton3[cur]->Refresh();}} return 0;}
+int SwitchButton3_8_Event(Event event){if (event == release){u8 cur=7;if(pSwitchButton3[cur]->GetOnoff()!=1){pSwitchButton3[curswitchbotton3]->SetOff();pSwitchButton3[curswitchbotton3]->Refresh();curswitchbotton3=cur;pSwitchButton3[cur]->SetOn();pSwitchButton3[cur]->Refresh();}} return 0;}
+int SwitchButton3_9_Event(Event event){if (event == release){u8 cur=8;if(pSwitchButton3[cur]->GetOnoff()!=1){pSwitchButton3[curswitchbotton3]->SetOff();pSwitchButton3[curswitchbotton3]->Refresh();curswitchbotton3=cur;pSwitchButton3[cur]->SetOn();pSwitchButton3[cur]->Refresh();}} return 0;}
+int SwitchButton3_10_Event(Event event){if (event == release){u8 cur=9;if(pSwitchButton3[cur]->GetOnoff()!=1){pSwitchButton3[curswitchbotton3]->SetOff();pSwitchButton3[curswitchbotton3]->Refresh();curswitchbotton3=cur;pSwitchButton3[cur]->SetOn();pSwitchButton3[cur]->Refresh();}} return 0;}
+int SwitchButton3_11_Event(Event event){if (event == release){u8 cur=10;if(pSwitchButton3[cur]->GetOnoff()!=1){pSwitchButton3[curswitchbotton3]->SetOff();pSwitchButton3[curswitchbotton3]->Refresh();curswitchbotton3=cur;pSwitchButton3[cur]->SetOn();pSwitchButton3[cur]->Refresh();}} return 0;}
+int SwitchButton3_12_Event(Event event){if (event == release){u8 cur=11;if(pSwitchButton3[cur]->GetOnoff()!=1){pSwitchButton3[curswitchbotton3]->SetOff();pSwitchButton3[curswitchbotton3]->Refresh();curswitchbotton3=cur;pSwitchButton3[cur]->SetOn();pSwitchButton3[cur]->Refresh();}} return 0;}
+int SwitchButton3_13_Event(Event event){if (event == release){u8 cur=12;if(pSwitchButton3[cur]->GetOnoff()!=1){pSwitchButton3[curswitchbotton3]->SetOff();pSwitchButton3[curswitchbotton3]->Refresh();curswitchbotton3=cur;pSwitchButton3[cur]->SetOn();pSwitchButton3[cur]->Refresh();}} return 0;}
+int SwitchButton3_14_Event(Event event){if (event == release){u8 cur=13;if(pSwitchButton3[cur]->GetOnoff()!=1){pSwitchButton3[curswitchbotton3]->SetOff();pSwitchButton3[curswitchbotton3]->Refresh();curswitchbotton3=cur;pSwitchButton3[cur]->SetOn();pSwitchButton3[cur]->Refresh();}} return 0;}
+int SwitchButton3_15_Event(Event event){if (event == release){u8 cur=14;if(pSwitchButton3[cur]->GetOnoff()!=1){pSwitchButton3[curswitchbotton3]->SetOff();pSwitchButton3[curswitchbotton3]->Refresh();curswitchbotton3=cur;pSwitchButton3[cur]->SetOn();pSwitchButton3[cur]->Refresh();}} return 0;}
+int SwitchButton3_16_Event(Event event){if (event == release){u8 cur=15;if(pSwitchButton3[cur]->GetOnoff()!=1){pSwitchButton3[curswitchbotton3]->SetOff();pSwitchButton3[curswitchbotton3]->Refresh();curswitchbotton3=cur;pSwitchButton3[cur]->SetOn();pSwitchButton3[cur]->Refresh();}} return 0;}
+int SwitchButton3_17_Event(Event event){if (event == release){u8 cur=16;if(pSwitchButton3[cur]->GetOnoff()!=1){pSwitchButton3[curswitchbotton3]->SetOff();pSwitchButton3[curswitchbotton3]->Refresh();curswitchbotton3=cur;pSwitchButton3[cur]->SetOn();pSwitchButton3[cur]->Refresh();}} return 0;}
+int SwitchButton3_18_Event(Event event){if (event == release){u8 cur=17;if(pSwitchButton3[cur]->GetOnoff()!=1){pSwitchButton3[curswitchbotton3]->SetOff();pSwitchButton3[curswitchbotton3]->Refresh();curswitchbotton3=cur;pSwitchButton3[cur]->SetOn();pSwitchButton3[cur]->Refresh();}} return 0;}
+int SwitchButton3_19_Event(Event event){if (event == release){u8 cur=18;if(pSwitchButton3[cur]->GetOnoff()!=1){pSwitchButton3[curswitchbotton3]->SetOff();pSwitchButton3[curswitchbotton3]->Refresh();curswitchbotton3=cur;pSwitchButton3[cur]->SetOn();pSwitchButton3[cur]->Refresh();}} return 0;}
+int SwitchButton3_20_Event(Event event){if (event == release){u8 cur=19;if(pSwitchButton3[cur]->GetOnoff()!=1){pSwitchButton3[curswitchbotton3]->SetOff();pSwitchButton3[curswitchbotton3]->Refresh();curswitchbotton3=cur;pSwitchButton3[cur]->SetOn();pSwitchButton3[cur]->Refresh();}} return 0;}
 int Button4_0_Event(Event event){if (event == release){window0.Refresh();}return 0;}
-int SwitchButton4_1_Event(Event event){if (event == release){if(SwitchButton4_1.GetOnoff())SwitchButton4_1.SetOff();else SwitchButton4_1.SetOn();SwitchButton4_1.Refresh();}return 0;}
-int SwitchButton4_2_Event(Event event){if (event == release){if(SwitchButton4_2.GetOnoff())SwitchButton4_2.SetOff();else SwitchButton4_2.SetOn();SwitchButton4_2.Refresh();}return 0;}
+int SwitchButton4_1_Event(Event event){if (event == release){/*if(SwitchButton4_1.GetOnoff())SwitchButton4_1.SetOff();else SwitchButton4_1.SetOn();SwitchButton4_1.Refresh();*/}return 0;}
+int SwitchButton4_2_Event(Event event){if (event == release){/*if(SwitchButton4_2.GetOnoff())SwitchButton4_2.SetOff();else SwitchButton4_2.SetOn();SwitchButton4_2.Refresh();*/}return 0;}
 int Button5_0_Event(Event event){if (event == release){window0.Refresh();}return 0;}
 int SwitchButton5_1_Event(Event event){if (event == release){if(SwitchButton5_1.GetOnoff())SwitchButton5_1.SetOff();else SwitchButton5_1.SetOn();SwitchButton5_1.Refresh();}return 0;}
 int Button6_0_Event(Event event){if (event == release){window0.Refresh();}return 0;}
-int SwitchButton6_1_Event(Event event){if (event == release){if(SwitchButton6_1.GetOnoff())SwitchButton6_1.SetOff();else SwitchButton6_1.SetOn();SwitchButton6_1.Refresh();}return 0;}
-int SwitchButton6_2_Event(Event event){if (event == release){if(SwitchButton6_2.GetOnoff())SwitchButton6_2.SetOff();else SwitchButton6_2.SetOn();SwitchButton6_2.Refresh();}return 0;}
-int SwitchButton6_3_Event(Event event){if (event == release){if(SwitchButton6_3.GetOnoff())SwitchButton6_3.SetOff();else SwitchButton6_3.SetOn();SwitchButton6_3.Refresh();}return 0;}
+int curswitchbotton6=0;
+int SwitchButton6_1_Event(Event event){if (event == release){u8 cur=0;if(pSwitchButton6[cur]->GetOnoff()!=1){pSwitchButton6[curswitchbotton6]->SetOff();pSwitchButton6[curswitchbotton6]->Refresh();curswitchbotton6=cur;pSwitchButton6[cur]->SetOn();pSwitchButton6[cur]->Refresh();}} return 0;}
+int SwitchButton6_2_Event(Event event){if (event == release){u8 cur=1;if(pSwitchButton6[cur]->GetOnoff()!=1){pSwitchButton6[curswitchbotton6]->SetOff();pSwitchButton6[curswitchbotton6]->Refresh();curswitchbotton6=cur;pSwitchButton6[cur]->SetOn();pSwitchButton6[cur]->Refresh();}} return 0;}
+int SwitchButton6_3_Event(Event event){if (event == release){u8 cur=2;if(pSwitchButton6[cur]->GetOnoff()!=1){pSwitchButton6[curswitchbotton6]->SetOff();pSwitchButton6[curswitchbotton6]->Refresh();curswitchbotton6=cur;pSwitchButton6[cur]->SetOn();pSwitchButton6[cur]->Refresh();}} return 0;}
+// int SwitchButton6_1_Event(Event event){if (event == release){if(SwitchButton6_1.GetOnoff())SwitchButton6_1.SetOff();else SwitchButton6_1.SetOn();SwitchButton6_1.Refresh();}return 0;}
+// int SwitchButton6_2_Event(Event event){if (event == release){if(SwitchButton6_2.GetOnoff())SwitchButton6_2.SetOff();else SwitchButton6_2.SetOn();SwitchButton6_2.Refresh();}return 0;}
+// int SwitchButton6_3_Event(Event event){if (event == release){if(SwitchButton6_3.GetOnoff())SwitchButton6_3.SetOff();else SwitchButton6_3.SetOn();SwitchButton6_3.Refresh();}return 0;}
 int Button7_0_Event(Event event){if (event == release){window0.Refresh();}return 0;}
 void UI_Init(void){
 ui.AddWindow(&window0);
