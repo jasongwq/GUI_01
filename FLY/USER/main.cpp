@@ -20,8 +20,6 @@ void SYS_INIT(void)
     /***中断初始化***/
     NVIC_Configuration();
     uart_init (115200);
-    //uart_init (115200);
-    //uart3_init(115200);
     Sys_Printf(Printf_USART, (char *)"\r\nPrintf_USART ok");
     Sys_Printf(Printf_USART, (char *)"1");
     Sys_Printf(Printf_USART, (char *)"2");
@@ -34,8 +32,6 @@ int main(void)
     /***总循环***/
     while (1)
     {
-        //RunTaskA(task_gps,0);
-        RunTaskA(task_display, 2);
-        RunTaskA(task_led, 3);
+				RunTaskA(task_display, 2);//显示任务
     }
 }
