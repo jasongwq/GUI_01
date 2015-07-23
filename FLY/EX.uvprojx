@@ -50,8 +50,8 @@
           <OutputName>EX</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
-          <CreateHexFile>1</CreateHexFile>
-          <DebugInformation>1</DebugInformation>
+          <CreateHexFile>0</CreateHexFile>
+          <DebugInformation>0</DebugInformation>
           <BrowseInformation>1</BrowseInformation>
           <ListingPath>.\OBJ\</ListingPath>
           <HexFormatSelection>1</HexFormatSelection>
@@ -78,7 +78,7 @@
             <nStopB2X>0</nStopB2X>
           </BeforeMake>
           <AfterMake>
-            <RunUserProg1>1</RunUserProg1>
+            <RunUserProg1>0</RunUserProg1>
             <RunUserProg2>0</RunUserProg2>
             <UserProg1Name>E:\WORK\Project_List\MULTI_ROTOR_TYPE_AIRCRAFT\GFLY\FLY\commit.bat</UserProg1Name>
             <UserProg2Name></UserProg2Name>
@@ -559,11 +559,6 @@
               <FilePath>.\USER\system_stm32f10x.c</FilePath>
             </File>
             <File>
-              <FileName>stm32_config.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\USER\stm32_config.h</FilePath>
-            </File>
-            <File>
               <FileName>main.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>.\USER\main.cpp</FilePath>
@@ -573,51 +568,6 @@
         <Group>
           <GroupName>TASK</GroupName>
           <Files>
-            <File>
-              <FileName>task_bmp085.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>.\USER\TASK\task_bmp085.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>loop_fast.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>.\USER\TASK\loop_fast.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>task_6050.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>.\USER\TASK\task_6050.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>task_cap_rc.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>.\USER\TASK\task_cap_rc.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>task_hmc5883l.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>.\USER\TASK\task_hmc5883l.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>task_led.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>.\USER\TASK\task_led.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>task_pwm_ex.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>.\USER\TASK\task_pwm_ex.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>task_ultrasonic.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>.\USER\TASK\task_ultrasonic.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>task_gps.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>.\USER\TASK\task_gps.cpp</FilePath>
-            </File>
             <File>
               <FileName>task_display.cpp</FileName>
               <FileType>8</FileType>
@@ -684,24 +634,9 @@
               <FilePath>..\GLIB\HARDWARE\G32_Timer.c</FilePath>
             </File>
             <File>
-              <FileName>G32_Timer_Cap.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\GLIB\HARDWARE\G32_Timer_Cap.c</FilePath>
-            </File>
-            <File>
               <FileName>gpio.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\GLIB\HARDWARE\gpio.c</FilePath>
-            </File>
-            <File>
-              <FileName>pwm.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\GLIB\HARDWARE\pwm.c</FilePath>
-            </File>
-            <File>
-              <FileName>spi.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\GLIB\HARDWARE\spi.c</FilePath>
             </File>
             <File>
               <FileName>stmflash.c</FileName>
@@ -713,21 +648,11 @@
               <FileType>1</FileType>
               <FilePath>..\GLIB\HARDWARE\bkp.c</FilePath>
             </File>
-            <File>
-              <FileName>G32_HI2c.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\GLIB\HARDWARE\G32_HI2c.c</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
           <GroupName>APP</GroupName>
           <Files>
-            <File>
-              <FileName>kalman.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\USER\APP\Kalman_Fliter\kalman.c</FilePath>
-            </File>
             <File>
               <FileName>binary_chop.c</FileName>
               <FileType>1</FileType>
@@ -742,101 +667,18 @@
         </Group>
         <Group>
           <GroupName>PERIPHERAL</GroupName>
-          <Files>
-            <File>
-              <FileName>MPU6050.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\GLIB\PERIPHERAL\MPU6050\MPU6050.c</FilePath>
-            </File>
-            <File>
-              <FileName>G32_Nrf24l01.C</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\GLIB\PERIPHERAL\NRF24L01\G32_Nrf24l01.C</FilePath>
-            </File>
-            <File>
-              <FileName>ultrasonic.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\GLIB\PERIPHERAL\ULTRASONIC\ultrasonic.c</FilePath>
-            </File>
-            <File>
-              <FileName>hmc5883l.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\GLIB\PERIPHERAL\HMC5883L\hmc5883l.c</FilePath>
-            </File>
-            <File>
-              <FileName>bmp085.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\GLIB\PERIPHERAL\BMP085\bmp085.c</FilePath>
-            </File>
-            <File>
-              <FileName>GPS_DRIVER.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\GLIB\PERIPHERAL\GPS\GPS_DRIVER.c</FilePath>
-            </File>
-          </Files>
         </Group>
         <Group>
           <GroupName>FATFS</GroupName>
         </Group>
         <Group>
           <GroupName>COMMUNICATION</GroupName>
-          <Files>
-            <File>
-              <FileName>rc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\USER\APP\rc.c</FilePath>
-            </File>
-            <File>
-              <FileName>data_transfer.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\USER\APP\data_transfer.c</FilePath>
-            </File>
-          </Files>
         </Group>
         <Group>
           <GroupName>ALGORITHM</GroupName>
-          <Files>
-            <File>
-              <FileName>IMU.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\USER\APP\IMU.c</FilePath>
-            </File>
-            <File>
-              <FileName>filter.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\USER\APP\filter.c</FilePath>
-            </File>
-            <File>
-              <FileName>Control.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\USER\APP\Control.c</FilePath>
-            </File>
-            <File>
-              <FileName>motor.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\USER\APP\motor.c</FilePath>
-            </File>
-            <File>
-              <FileName>Balance.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>.\USER\APP\Balance.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>pfilter.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\USER\APP\pfilter.c</FilePath>
-            </File>
-          </Files>
         </Group>
         <Group>
           <GroupName>DATA</GroupName>
-          <Files>
-            <File>
-              <FileName>bak.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\USER\APP\bak.c</FilePath>
-            </File>
-          </Files>
         </Group>
         <Group>
           <GroupName>DISPLAY</GroupName>

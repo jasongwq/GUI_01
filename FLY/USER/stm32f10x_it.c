@@ -36,100 +36,100 @@ void DMA1_Channel1_IRQHandler(void)
         DMA_ClearITPendingBit(DMA1_IT_GL1);
     }
 }
-void TIM1_BRK_IRQHandler(void)
-{
-    TIM1_BRK_IRQ();
-}
+//void TIM1_BRK_IRQHandler(void)
+//{
+//    TIM1_BRK_IRQ();
+//}
 
-void TIM1_TRG_COM_IRQHandler(void)
-{
-    TIM1_TRG_COM_IRQ();
-}
-extern void TIM1_Cap_IRQ(void);
+//void TIM1_TRG_COM_IRQHandler(void)
+//{
+//    TIM1_TRG_COM_IRQ();
+//}
+//extern void TIM1_Cap_IRQ(void);
 
-extern void TIM3_Cap_IRQ(void);
-extern void TIM4_Cap_IRQ(void);
-extern void TIM8_Cap_IRQ(void);
+//extern void TIM3_Cap_IRQ(void);
+//extern void TIM4_Cap_IRQ(void);
+//extern void TIM8_Cap_IRQ(void);
 
 
-void TIM1_UP_IRQHandler(void)
-{
-    #include "G32_Timer_Cap_Config.h"
-#if (CAP_TIM1_CH1)||(CAP_TIM1_CH2)||(CAP_TIM1_CH3)||(CAP_TIM1_CH4)
-  extern void TIM1_Cap_IRQ(void);
-	TIM1_Cap_IRQ();
-#endif
-}
-void TIM1_CC_IRQHandler(void)
-{
-	#include "G32_Timer_Cap_Config.h"
-#if (CAP_TIM1_CH1)||(CAP_TIM1_CH2)||(CAP_TIM1_CH3)||(CAP_TIM1_CH4)
-  extern void TIM1_Cap_IRQ(void);
-	TIM1_Cap_IRQ();
-#endif
-}
-void TIM8_UP_IRQHandler(void)
-{
-    #include "G32_Timer_Cap_Config.h"
-#if (CAP_TIM8_CH1)||(CAP_TIM8_CH2)||(CAP_TIM8_CH3)||(CAP_TIM8_CH4)
-  extern void TIM8_Cap_IRQ(void);
-	TIM8_Cap_IRQ();
-#endif
-}
-void TIM8_CC_IRQHandler(void)
-{
-	#include "G32_Timer_Cap_Config.h"
-#if (CAP_TIM8_CH1)||(CAP_TIM8_CH2)||(CAP_TIM8_CH3)||(CAP_TIM8_CH4)
-  extern void TIM8_Cap_IRQ(void);
-	TIM8_Cap_IRQ();
-#endif
-}
-void TIM2_IRQHandler(void)
-{
-#include "G32_Timer_Cap_Config.h"
-#if (CAP_TIM2_CH1)||(CAP_TIM2_CH2)||(CAP_TIM2_CH3)||(CAP_TIM2_CH4)
-  extern void TIM2_Cap_IRQ(void);
-	TIM2_Cap_IRQ();
-#endif
-}
-void TIM3_IRQHandler(void)
-{
-    TIM3_Cap_IRQ();
-}
-void TIM4_IRQHandler(void)
-{
-    TIM4_Cap_IRQ();
-}
+//void TIM1_UP_IRQHandler(void)
+//{
+//    #include "G32_Timer_Cap_Config.h"
+//#if (CAP_TIM1_CH1)||(CAP_TIM1_CH2)||(CAP_TIM1_CH3)||(CAP_TIM1_CH4)
+//  extern void TIM1_Cap_IRQ(void);
+//	TIM1_Cap_IRQ();
+//#endif
+//}
+//void TIM1_CC_IRQHandler(void)
+//{
+//	#include "G32_Timer_Cap_Config.h"
+//#if (CAP_TIM1_CH1)||(CAP_TIM1_CH2)||(CAP_TIM1_CH3)||(CAP_TIM1_CH4)
+//  extern void TIM1_Cap_IRQ(void);
+//	TIM1_Cap_IRQ();
+//#endif
+//}
+//void TIM8_UP_IRQHandler(void)
+//{
+//    #include "G32_Timer_Cap_Config.h"
+//#if (CAP_TIM8_CH1)||(CAP_TIM8_CH2)||(CAP_TIM8_CH3)||(CAP_TIM8_CH4)
+//  extern void TIM8_Cap_IRQ(void);
+//	TIM8_Cap_IRQ();
+//#endif
+//}
+//void TIM8_CC_IRQHandler(void)
+//{
+//	#include "G32_Timer_Cap_Config.h"
+//#if (CAP_TIM8_CH1)||(CAP_TIM8_CH2)||(CAP_TIM8_CH3)||(CAP_TIM8_CH4)
+//  extern void TIM8_Cap_IRQ(void);
+//	TIM8_Cap_IRQ();
+//#endif
+//}
+//void TIM2_IRQHandler(void)
+//{
+//#include "G32_Timer_Cap_Config.h"
+//#if (CAP_TIM2_CH1)||(CAP_TIM2_CH2)||(CAP_TIM2_CH3)||(CAP_TIM2_CH4)
+//  extern void TIM2_Cap_IRQ(void);
+//	TIM2_Cap_IRQ();
+//#endif
+//}
+//void TIM3_IRQHandler(void)
+//{
+//    TIM3_Cap_IRQ();
+//}
+//void TIM4_IRQHandler(void)
+//{
+//    TIM4_Cap_IRQ();
+//}
+////void TIM5_IRQHandler(void)
+////{
+////    if (TIM5->SR & TIM_IT_Update)
+////    {
+////        TIM5_IRQ();
+////        TIM5->SR = ~TIM_FLAG_Update;
+////    }
+////}
+////extern void TIM5_Cap_IRQ(void);
 //void TIM5_IRQHandler(void)
 //{
-//    if (TIM5->SR & TIM_IT_Update)
+//    //TIM5_Cap_IRQ();
+//    // TIM5_IRQ();
+//}
+//void TIM6_IRQHandler(void)
+//{
+//    if (TIM6->SR & TIM_IT_Update)
 //    {
-//        TIM5_IRQ();
-//        TIM5->SR = ~TIM_FLAG_Update;
+//        TIM6_IRQ();
+//        TIM6->SR = ~TIM_FLAG_Update;
 //    }
 //}
-//extern void TIM5_Cap_IRQ(void);
-void TIM5_IRQHandler(void)
-{
-    //TIM5_Cap_IRQ();
-    // TIM5_IRQ();
-}
-void TIM6_IRQHandler(void)
-{
-    if (TIM6->SR & TIM_IT_Update)
-    {
-        TIM6_IRQ();
-        TIM6->SR = ~TIM_FLAG_Update;
-    }
-}
-void TIM7_IRQHandler(void)
-{
-    if (TIM7->SR & TIM_IT_Update)
-    {
-        TIM7_IRQ();
-        TIM7->SR = ~TIM_FLAG_Update;
-    }
-}
+//void TIM7_IRQHandler(void)
+//{
+//    if (TIM7->SR & TIM_IT_Update)
+//    {
+//        TIM7_IRQ();
+//        TIM7->SR = ~TIM_FLAG_Update;
+//    }
+//}
 /*******************************************************************************
 * Function Name  : USB_HP_CAN_TX_IRQHandler
 * Description    : This function handles USB High Priority or CAN TX interrupts

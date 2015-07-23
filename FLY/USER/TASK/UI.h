@@ -210,12 +210,12 @@ private:
     u8 Obj_count[2];
     u8 name;
 public:
-    Window(u8 n,Button *pB[],SwitchButton *pS[])
+    Window(u8 n, Button *pB[], SwitchButton *pS[])
     {
         Obj_count[0] = 0;
         Obj_count[1] = 0;
-        pButton=pB;
-        pSwitchButton=pS;
+        pButton = pB;
+        pSwitchButton = pS;
         name = n;
     }
     void AddButton(Button *pB)
@@ -240,7 +240,7 @@ public:
     {
         window_count = 0;
         current_window = 0;
-			pwindow_list=pw;
+        pwindow_list = pw;
     }
     void AddWindow(Window *win)
     {

@@ -3,14 +3,14 @@
 void Window::EventDetection(void)
 {
     tp_dev.scan(0);
-            for (int i = 0; i < Obj_count[0]; ++i)
-            {
-                pButton[i]->EventDetection();
-            }
-						for (int i = 0; i < Obj_count[1]; ++i)
-            {
-                pSwitchButton[i]->EventDetection();
-            }
+    for (int i = 0; i < Obj_count[0]; ++i)
+    {
+        pButton[i]->EventDetection();
+    }
+    for (int i = 0; i < Obj_count[1]; ++i)
+    {
+        pSwitchButton[i]->EventDetection();
+    }
 }
 void Window::Refresh(void)
 {
@@ -19,7 +19,7 @@ void Window::Refresh(void)
     {
         pButton[i]->Refresh();
     }
-		for (int i = 0; i < Obj_count[1]; ++i)
+    for (int i = 0; i < Obj_count[1]; ++i)
     {
         pSwitchButton[i]->Refresh();
     }
